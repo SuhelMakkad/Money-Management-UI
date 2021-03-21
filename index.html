@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./circle/style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- chart js cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+      integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>mockup</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="notification-bell-container mobile-only">
+        <a href="./notification.html">
+          <i class="fas fa-bell bell-icon mobile-only-notification">
+            <i class="bell-notification"> </i> </i
+        ></a>
+      </div>
+      <div class="navbar">
+        <nav class="navigation">
+          <div class="nav-heading">
+            <img class="logo" src="./resources/logo.png" alt="search" />
+            <i class="fas fa-search search nav-items"></i>
+          </div>
+
+          <div class="nav-list">
+            <i class="fas active fa-home nav-items"></i>
+            <i class="far fa-newspaper nav-items"></i>
+            <i class="far fa-list-alt nav-items"></i>
+            <i class="far fa-user nav-items"></i>
+            <i class="fas fa-search modile-search nav-items"></i>
+          </div>
+
+          <div class="nav-footer">
+            <i class="fas fa-bell nav-items bell-icon">
+              <i class="bell-notification"></i>
+            </i>
+            <i class="fas fa-sign-out-alt nav-items"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="profile-container mobile-view">
+        <div class="profile-container-inner">
+          <div class="profile-image-name-container">
+            <img class="profile-image" src="./resources/profile-img.jpg" />
+            <div class="profile-name-container">
+              <p class="profile-name">Hi Mike,</p>
+              <p class="welcome-back-text">welcome back</p>
+            </div>
+          </div>
+
+          <div class="balance-container">
+            <p class="today-text sub-heading">Today</p>
+            <p class="balance-amount">$19,892</p>
+            <p class="balance-amount-text small-heading">Account Balance</p>
+            <div class="contributions-interest-container">
+              <div class="contributions-interest">
+                <p class="contribution-amount small-amount">$4,000</p>
+                <p class="contribution-amount-text small-heading">
+                  Year-to-Date <span>Contributions</span>
+                </p>
+              </div>
+              <div class="contributions-interest">
+                <p class="inerest-amount small-amount">$1,892</p>
+                <p class="inerest-amount-text small-heading">Totla Interest</p>
+              </div>
+            </div>
+            <button class="primary-button i-want-to-button">
+              I want to<i
+                class="fa fa-caret-down desktop-only"
+                aria-hidden="true"
+              ></i
+              ><span class="mobile-only">...</span>
+            </button>
+          </div>
+
+          <div class="recent-transactions-container">
+            <p class="recent-transaction-heading sub-heading">
+              Recent Transactions
+            </p>
+            <p class="small-heading">2020-08-07</p>
+            <p class="withdraw-details details-text">
+              Withdrawal Transafer to Bank-XXX11
+            </p>
+            <hr class="transactions-hr" />
+            <p class="small-heading">2020-07-21</p>
+            <p class="withdraw-details details-text">
+              Withdrawal Transafer to Bank-XXX11
+            </p>
+            <hr class="transactions-hr" />
+            <p class="small-heading">2020-07-16</p>
+            <p class="withdraw-details details-text">
+              Withdrawal Transafer to Bank-XXX11
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="section-hr mobile-only" />
+      <div class="income-container mobile-view">
+        <div class="income-container-inner">
+          <div class="retierment-income-container">
+            <p class="retierment-income-heading">Retirement Income</p>
+            <p class="year">Starting Year 2056</p>
+          </div>
+
+          <div class="income-details-container-outer">
+            <div class="income-details-container">
+              <p class="amount">$300,000</p>
+              <p class="goal small-heading">My Goal</p>
+              <hr />
+            </div>
+
+            <div class="income-details-container">
+              <p class="amount">59%</p>
+              <p class="goal small-heading">Goal Achieved</p>
+              <hr />
+            </div>
+
+            <div class="income-details-container">
+              <p class="amount">$300</p>
+              <p class="goal small-heading">Est. Monthly Income</p>
+              <hr />
+            </div>
+          </div>
+
+          <div class="contributions-container">
+            <p class="sub-heading sub-heading-big">Contribution Overtime</p>
+
+            <div class="chart-legends">
+              <div class="legend-container-inner">
+                <div class="legend-1"></div>
+                <p class="small-heading">Employer:</p>
+                <p class="legent-amount">
+                  <span class="desktop-only">K</span>
+                  <span class="mobile-only">$</span>
+                  73,500
+                </p>
+              </div>
+
+              <div class="legend-container-inner">
+                <div class="legend-2"></div>
+                <p class="small-heading">Employee:</p>
+                <p class="legent-amount">
+                  <span class="desktop-only">K</span>
+                  <span class="mobile-only">$</span>
+                  52,500
+                </p>
+              </div>
+
+              <div class="legend-container-inner">
+                <div class="legend-2"></div>
+                <p class="small-heading">Total Interest:</p>
+                <p class="legent-amount">
+                  <span class="desktop-only">K</span>
+                  <span class="mobile-only">$</span>
+                  224,313
+                </p>
+              </div>
+            </div>
+            <div class="bar-chart-big-container">
+              <i class="fas fa-check-circle bar-chart-tick"></i>
+              <canvas id="bar-chart-big"></canvas>
+            </div>
+            <div class="bar-chart-small-container">
+              <i class="fas fa-check-circle bar-chart-tick"></i>
+              <canvas id="bar-chart-small"></canvas>
+            </div>
+          </div>
+
+          <div class="peers-container notification">
+            <p class="sub-heading sub-heading-big">
+              How do I Compare to my peers?
+            </p>
+            <p class="small-heading">
+              These numbers represent current goal achievement
+            </p>
+
+            <div class="peers-container-inner">
+              <div class="peers-details-container">
+                <div class="peers-details sans-serif-details">
+                  <span>Age:</span> Under 30
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <hr class="peers-hr" />
+                </div>
+                <div class="peers-details sans-serif-details">
+                  <span>Salary:</span> K 20 - K 30
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <hr class="peers-hr" />
+                </div>
+                <div class="peers-details sans-serif-details">
+                  <span>Gender:</span> Male
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="cirlce-container">
+                <div class="progress-circle over50 p78">
+                  <span class="circle-per">%</span>
+                  <span class="circle-percent">78</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                  <span class="circle-dis">Average</span>
+                </div>
+                <div class="progress-circle over50 p95">
+                  <span class="circle-per">%</span>
+                  <span class="circle-percent">95</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                  <span class="circle-dis">Top</span>
+                </div>
+                <div class="progress-circle over50 p59">
+                  <span class="circle-per">%</span>
+                  <span class="circle-percent">59</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                  <span class="circle-dis">Me</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="strategy-container notification">
+        <div class="strategy-container-inner">
+          <div class="strategy-uppper-conntainer">
+            <p class="strategy-heading">Retirement Strategy</p>
+            <div class="slider-container">
+              <p class="sliper-heading sans-serif-details">
+                Employee Contribution
+              </p>
+              <div class="slider">
+                <div class="slider-container-inner">
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="50"
+                    class="slider-input"
+                    id="myRangePercentage"
+                  />
+                </div>
+                <span
+                  id="slider-percentage"
+                  class="contribution-details sans-serif-details"
+                  >12%</span
+                >
+              </div>
+            </div>
+
+            <div class="slider-container">
+              <p class="sliper-heading sans-serif-details">Retirement Age</p>
+              <div class="slider">
+                <div class="slider-container-inner">
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="65"
+                    class="slider-input"
+                    id="myRangeNumber"
+                    value="65"
+                  />
+                </div>
+                <span
+                  id="slider-number"
+                  class="contribution-details sans-serif-details"
+                  >65</span
+                >
+              </div>
+            </div>
+
+            <hr class="slider-hr" />
+
+            <div class="contribution">
+              <div class="contribution-inner-container">
+                <p class="contribution-details sans-serif-details">
+                  Employer Contribution
+                </p>
+
+                <p class="contribution-details sans-serif-details">8.4%</p>
+              </div>
+
+              <div class="contribution-inner-container">
+                <p class="contribution-details sans-serif-details">
+                  Interest Rate
+                </p>
+                <p class="contribution-details sans-serif-details">5%</p>
+              </div>
+
+              <button class="update-button primary-button">Update</button>
+              <a href="#" class="link"
+                >View Help Docs <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="lern-more-container">
+            <p class="learn-heading">Are you considering a</p>
+            <p class="learn-sub-heading">Housing Advance?</p>
+            <p class="small-heading">Limited time reduced interset.</p>
+            <a href="#" class="learn-more-link link"
+              >Learn More <i class="fas fa-chevron-right"></i
+            ></a>
+            <div class="side-line"></div>
+          </div>
+        </div>
+      </div>
+      <img class="bottom-img" src="./resources/bottom.png" />
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

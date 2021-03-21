@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./circle/style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>notifications</title>
+  </head>
+  <body class="mobile-only">
+    <div class="container">
+      <div class="notification-bell-container mobile-only">
+        <a href="./index.html">
+          <i class="fas fa-times bell-icon mobile-only-notification"></i
+        ></a>
+      </div>
+      <div style="margin-top: 2rem" class="income-container">
+        <div class="income-container-inner">
+          <div style="display: block" class="peers-container notification">
+            <p class="sub-heading sub-heading-big">
+              How do I Compare to my peers?
+            </p>
+            <p class="small-heading">
+              These numbers represent current goal achievement
+            </p>
+
+            <div class="peers-container-inner">
+              <div class="peers-details-container">
+                <div class="peers-details sans-serif-details">
+                  <span>Age:</span> Under 30
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <hr class="peers-hr" />
+                </div>
+                <div class="peers-details sans-serif-details">
+                  <span>Salary:</span> K 20 - K 30
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <hr class="peers-hr" />
+                </div>
+                <div class="peers-details sans-serif-details">
+                  <span>Gender:</span> Male
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="cirlce-container">
+                <div class="progress-circle over50 p78">
+                  <span class="circle-per">%</span>
+                  <span class="circle-percent">78</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                  <span class="circle-dis">Average</span>
+                </div>
+                <div class="progress-circle over50 p95">
+                  <span class="circle-per">%</span>
+                  <span class="circle-percent">95</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                  <span class="circle-dis">Top</span>
+                </div>
+                <div class="progress-circle over50 p59">
+                  <span class="circle-per">%</span>
+                  <span class="circle-percent">59</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                  <span class="circle-dis">Me</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-hr" />
+
+      <div style="display: block" class="strategy-container notification">
+        <div class="strategy-container-inner">
+          <div class="strategy-uppper-conntainer">
+            <p class="strategy-heading">Retirement Strategy</p>
+            <div class="slider-container">
+              <p class="sliper-heading sans-serif-details">
+                Employee Contribution
+              </p>
+              <div class="slider">
+                <div class="slider-container-inner">
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="50"
+                    class="slider-input"
+                    id="myRangePercentage"
+                  />
+                </div>
+                <span>
+                  <span
+                    style="margin-right: 0"
+                    id="slider-percentage"
+                    class="contribution-details sans-serif-details"
+                    >12</span
+                  >
+                  <span
+                    style="margin-right: 0"
+                    id="slider-percentage"
+                    class="contribution-details sans-serif-details"
+                    >%</span
+                  ></span
+                >
+              </div>
+            </div>
+
+            <div class="slider-container">
+              <p class="sliper-heading sans-serif-details">Retirement Age</p>
+              <div class="slider">
+                <div class="slider-container-inner">
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="65"
+                    class="slider-input"
+                    id="myRangeNumber"
+                    value="65"
+                  />
+                </div>
+                <span
+                  id="slider-number"
+                  class="contribution-details sans-serif-details"
+                  >12%</span
+                >
+              </div>
+            </div>
+
+            <hr class="slider-hr" />
+
+            <div class="contribution">
+              <div class="contribution-inner-container">
+                <p class="contribution-details sans-serif-details">
+                  Employer Contribution
+                </p>
+
+                <p class="contribution-details sans-serif-details">8.4%</p>
+              </div>
+
+              <div class="contribution-inner-container">
+                <p class="contribution-details sans-serif-details">
+                  Interest Rate
+                </p>
+                <p class="contribution-details sans-serif-details">5%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="update-button primary-button">Update</button>
+    <script src="./notification.js"></script>
+  </body>
+</html>
